@@ -14,7 +14,10 @@ export default function Onboarding() {
           className="onboarding__container__logo__img"
         />
       </div>
-      <Link to="/" className="onboarding__container__recruitment">
+      <Link
+        to="/aigron_recruitment"
+        className="onboarding__container__recruitment"
+      >
         <img
           src={recruitmentPic}
           alt="recruitmentPic"
@@ -31,7 +34,7 @@ export default function Onboarding() {
           className="onboarding__container__projects__img"
         />
         <div className="onboarding__container__projects__heading">
-          Aigron <span>Recruitment</span>
+          Aigron <span>Projects</span>
         </div>
       </Link>
     </div>

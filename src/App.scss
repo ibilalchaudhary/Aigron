@@ -5,11 +5,11 @@
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
 }
 .onboarding__container {
   display: flex;
@@ -23,17 +23,25 @@ body {
   width: 50%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .onboarding__container__projects {
   width: 50%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .onboarding__container__recruitment__img,
 .onboarding__container__projects__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 400ms ease-in-out;
+}
+.onboarding__container__recruitment__img:hover,
+.onboarding__container__projects__img:hover {
+  transform: scale(1.06);
+  transition: 400ms ease-in-out;
 }
 .onboarding__container__logo {
   position: absolute;
@@ -65,7 +73,192 @@ body {
 .onboarding__container__projects__heading span {
   font-weight: 700;
 }
-
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  position: fixed;
+  top: 0px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 1em 2em;
+}
+.brand__logo {
+  width: 130px;
+}
+.header__mobile__btn {
+  border: none;
+  display: none;
+  cursor: pointer;
+  background-color: #6ba53a;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.header__mobile__btn svg {
+  width: 22px;
+  height: 22px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  position: relative;
+  margin-left: 1em;
+}
+.nav__link__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  background-color: #6ba53a;
+}
+.nav__link__content {
+  padding: 0.6em 1.5em;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.nav__link__input:hover ~ .nav__link__content,
+.nav__link__input:checked ~ .nav__link__content {
+  transition: 300ms ease-in-out;
+  color: white;
+  background-color: #6ba53a;
+}
+.aigron__recuitment__main__container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-image: url("./assets/AigronRecruitmentBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aigron__recuitment__main__container__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  height: fit-content;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+}
+.aigron__recuitment__main__container__content__heading {
+  font-size: 30px;
+  color: #000000;
+  margin: 0.5em 0em;
+}
+.aigron__recuitment__main__container__content__heading span {
+  font-weight: 600;
+}
+.aigron__recuitment__main__container__content__input__wrapper {
+  width: 50%;
+  background: #fff;
+  padding: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 300ms ease-in-out;
+}
+.aigron__recuitment__main__container__content__input__wrapper:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  transition: 300ms ease-in-out;
+}
+.aigron__recuitment__main__container__content__input__model {
+  width: 50%;
+  background: #fff;
+  padding: 1.5em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 12px 12px;
+  margin-top: -8px;
+}
+.aigron__recuitment__main__container__content__input {
+  width: 100%;
+  font-size: 16px;
+  color: #000000;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.aigron__recuitment__main__container__content__input__btn {
+  border: none;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.aigron__recuitment__main__container__content__input__btn svg {
+  width: 20px;
+  height: 20px;
+}
+.aigron__recuitment__main__container__content__input__model__entry svg {
+  width: 20px;
+  height: 20px;
+}
+.aigron__recuitment__main__container__content__input__model__entry {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8em;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .header__mobile__btn {
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    background-color: white;
+    width: 100vw;
+    left: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+  }
+  .nav__link {
+    margin-left: 0em;
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  .footer__wrapper__col {
+    min-width: 100%;
+    height: fit-content;
+    margin-bottom: 2em;
+  }
+  .footer__wrapper__col p {
+    margin-right: 0em;
+  }
+}
 @media (max-width: 650px) {
   .onboarding__container {
     flex-direction: column;
