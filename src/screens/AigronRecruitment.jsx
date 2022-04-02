@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import TrendingJobCard from "../components/TrendingJobCard";
 import softwareSvg from "../assets/trendingJobSvgs/softwareSvg.svg";
 import softwareSvgHover from "../assets/trendingJobSvgs/softwareSvgHover.svg";

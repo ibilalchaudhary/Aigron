@@ -657,6 +657,218 @@ body {
   height: 6px;
   background: #6ba53a;
 }
+.aigron__project__main__container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.aigron__project__main__container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.aigron__project__main__container__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.aigron__project__main__container__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  margin: 0px auto;
+}
+.aigron__project__main__container__content__heading {
+  font-size: 28px;
+}
+.aigron__project__main__container__content__heading span {
+  color: #6ba53a;
+  font-weight: 600;
+}
+.aigron__project__main__container__content__para {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 0.2em;
+}
+.share__idea__container {
+  width: 100%;
+  max-width: 700px;
+  height: 60px;
+  margin: 0px auto;
+  background: #6ba53a;
+  position: relative;
+  z-index: 999;
+  margin-top: -2em;
+  border-radius: 30px 0px 30px 0px;
+}
+.share__idea__container__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(107, 165, 58, 0.8);
+  font-size: 22px;
+  color: #fff;
+  border-radius: 30px 0px 30px 0px;
+}
+.share__idea__container__overlay span {
+  font-weight: 600;
+  margin-left: 0.2em;
+}
+.share__idea__container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px 0px 30px 0px;
+}
+.clients__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 8em 2em;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients__container__left {
+  width: 50%;
+}
+.clients__container__right {
+  width: 46%;
+}
+.clients__container__right__para {
+  font-size: 15px;
+  color: #000000;
+}
+.clients__container__left__images__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.clients__container__left__images__card {
+  width: 32%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.clients__container__left__images__card:nth-child(1) {
+  transition: 300ms ease-in-out;
+  background: #f1f1f1;
+}
+// .clients__container__left__images__card:nth-child(1):hover {
+//   background: #ffffff;
+//   transition: 300ms ease-in-out;
+// }
+// .clients__container__left__images__card:nth-child(3):hover {
+//   background: #ffffff;
+//   transition: 300ms ease-in-out;
+// }
+// .clients__container__left__images__card:nth-child(5):hover {
+//   background: #ffffff;
+//   transition: 300ms ease-in-out;
+// }
+.clients__container__left__images__card:nth-child(3) {
+  background: #f1f1f1;
+  transition: 300ms ease-in-out;
+}
+.clients__container__left__images__card:nth-child(5) {
+  background: #f1f1f1;
+  transition: 300ms ease-in-out;
+}
+.clients__container__left__images__card__img {
+  width: 140px;
+}
+.what__we__do__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 6em 2em;
+  height: fit-content;
+  margin: 0px auto;
+}
+.what__we__do__container__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.what__we__do__container__content__heading {
+  width: 24%;
+  font-size: 30px;
+  color: #505050;
+}
+.what__we__do__container__content__heading span {
+  font-weight: 600;
+}
+.what__we__do__container__content__card {
+  width: 24%;
+  background: #f4f4f4;
+  margin-bottom: 1em;
+  height: fit-content;
+  min-height: 220px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.what__we__do__container__content__card:hover {
+  background: #6ba53a;
+  color: #fff;
+  transition: 300ms ease-in-out;
+}
+.what__we__do__container__content__card__heading {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  width: 100%;
+  text-align: start;
+  margin-top: 1.5em;
+}
+.what__we__do__container__content__card__heading span {
+  font-weight: 600;
+}
+.what__we__do__container__content__card__img {
+  width: 80px;
+  transition: 300ms ease-in-out;
+}
+.what__we__do__container__content__card__img__hover {
+  width: 80px;
+  display: none;
+  transition: 300ms ease-in-out;
+}
+.what__we__do__container__content__card:hover
+  .what__we__do__container__content__card__img {
+  display: none;
+  transition: 300ms ease-in-out;
+}
+.what__we__do__container__content__card:hover
+  .what__we__do__container__content__card__heading {
+  color: #fff;
+  transition: 300ms ease-in-out;
+}
+.what__we__do__container__content__card:hover
+  .what__we__do__container__content__card__img__hover {
+  display: flex;
+  transition: 300ms ease-in-out;
+}
 @media (max-width: 1440px) {
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
@@ -672,6 +884,17 @@ body {
   }
 }
 @media (max-width: 1050px) {
+  .clients__container {
+    flex-direction: column;
+  }
+  .clients__container__left {
+    width: 100%;
+  }
+  .clients__container__right {
+    width: 100%;
+    text-align: center;
+    margin-top: 4em;
+  }
   .footer__main__container__entry__wrapper {
     width: 50%;
     margin-bottom: 2em;
@@ -725,6 +948,14 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .what__we__do__container__content__card {
+    width: 32%;
+  }
+  .what__we__do__container__content__heading {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
   .footer__main__container__entry__wrapper {
     width: 100%;
   }
@@ -768,6 +999,12 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .what__we__do__container__content__card {
+    width: 49%;
+  }
+  .clients__container__left__images__card {
+    width: 49%;
+  }
   .data__analytics__container__img {
     display: none;
   }
@@ -791,6 +1028,9 @@ body {
   }
 }
 @media (max-width: 550px) {
+  .what__we__do__container__content__card {
+    width: 100%;
+  }
   .global__leader__container__img {
     width: 300px;
   }
@@ -801,6 +1041,12 @@ body {
     text-align: center;
   }
   .data__science__container__overlay__content {
+    width: 100%;
+  }
+  .share__idea__container__overlay {
+    font-size: 18px;
+  }
+  .clients__container__left__images__card {
     width: 100%;
   }
 }

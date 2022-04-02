@@ -35,7 +35,7 @@ export default function Onboarding({ setIsWellcome }) {
           Aigron <span>Recruitment</span>
         </div>
       </Link>
-      <Link to="/" className="onboarding__container__projects">
+      <Link to="/aigron_projects" className="onboarding__container__projects">
         <img
           src={projectPic}
           alt="projectPic"
