@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import recruitmentPic from "../assets/recruitmentPic.png";
 import projectPic from "../assets/projectPic.png";
 import onboardingLogo from "../assets/onboardingLogo.png";
 import { Link } from "react-router-dom";
 
-export default function Onboarding() {
+export default function Onboarding({ setIsWellcome }) {
+  useEffect(() => {
+    setIsWellcome(true);
+
+    return () => {
+      setIsWellcome(false);
+    };
+  }, []);
+
   return (
     <div className="onboarding__container">
       <div className="onboarding__container__logo">

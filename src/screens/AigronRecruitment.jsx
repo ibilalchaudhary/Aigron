@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
+
 import TrendingJobCard from "../components/TrendingJobCard";
 import softwareSvg from "../assets/trendingJobSvgs/softwareSvg.svg";
 import softwareSvgHover from "../assets/trendingJobSvgs/softwareSvgHover.svg";
@@ -12,6 +12,7 @@ import UiSvgHover from "../assets/trendingJobSvgs/UiSvgHover.svg";
 import { Link } from "react-router-dom";
 import dataAnalysicsBg from "../assets/dataAnalysicsBg.png";
 import globalLeaderPic from "../assets/globalLeaderPic.png";
+import dataScienceBg from "../assets/dataScienceBg.png";
 
 export default function AigronRecruitment() {
   const [isSearch, setIsSearch] = useState(false);
@@ -28,7 +29,6 @@ export default function AigronRecruitment() {
   ];
   return (
     <>
-      <Header />
       <div className="aigron__recuitment__main__container">
         <div className="aigron__recuitment__main__container__content">
           <div className="aigron__recuitment__main__container__content__heading">
@@ -220,6 +220,56 @@ export default function AigronRecruitment() {
           alt="globalLeaderPic"
           className="global__leader__container__img"
         />
+      </div>
+      <div className="employee__candidate__container">
+        <div className="employee__candidate__container__content__wrapper">
+          <div className="employee__candidate__container__content">
+            <div className="employee__candidate__container__content__card">
+              <div className="employee__candidate__container__content__card__heading">
+                Employee
+              </div>
+              <div className="employee__candidate__container__content__card__para">
+                Are you looking for new professionals?
+              </div>
+              <button className="employee__candidate__container__content__card__btn">
+                View More
+              </button>
+            </div>
+          </div>
+          <div className="employee__candidate__container__content">
+            <div className="employee__candidate__container__content__card employee__candidate__container__content__card__candidate">
+              <div className="employee__candidate__container__content__card__heading employee__candidate__container__content__card___heading__candidate">
+                Candidate
+              </div>
+              <div className="employee__candidate__container__content__card__para employee__candidate__container__content__card___heading__candidate">
+                Are you looking for a new job?
+              </div>
+              <button className="employee__candidate__container__content__card__btn__candidate">
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="data__science__container">
+        <img
+          src={dataScienceBg}
+          alt="dataScienceBg"
+          className="data__science__container__img"
+        />
+        <div className="data__science__container__overlay">
+          <div className="data__science__container__overlay__content">
+            <div className="data__science__container__overlay__content__heading">
+              Data Science <br /> <span>Staffing and Recruitment</span>
+            </div>
+            <div className="data__science__container__overlay__content__para">
+              Hire expert data scientist, engineers, and analysts.
+            </div>
+            <button className="data__science__container__overlay__content__btn">
+              View More
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
