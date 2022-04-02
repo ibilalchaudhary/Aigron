@@ -21,7 +21,7 @@ function App() {
           <Route path="/aigron_recruitment" element={<AigronRecruitment />} />
         </Routes>
       </div>
-      <Footer />
+      {isWellcome ? null : <Footer />}
     </>
   );
 }
