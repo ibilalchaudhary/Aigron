@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.onboarding__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.onboarding__container__recruitment {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.onboarding__container__projects {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.onboarding__container__recruitment__img,
+.onboarding__container__projects__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.onboarding__container__logo {
+  position: absolute;
+  top: 90px;
+  z-index: 9;
+}
+.onboarding__container__logo__img {
+  width: 160px;
+}
+.onboarding__container__recruitment__heading {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+.onboarding__container__recruitment__heading span {
+  font-weight: 700;
+}
+.onboarding__container__projects__heading {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.onboarding__container__projects__heading span {
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .onboarding__container {
+    flex-direction: column;
+  }
+  .onboarding__container__recruitment {
+    width: 100%;
+  }
+  .onboarding__container__projects {
+    width: 100%;
+  }
+  .onboarding__container__logo {
+    display: none;
+  }
+}
