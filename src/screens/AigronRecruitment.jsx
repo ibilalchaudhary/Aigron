@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import TrendingJobCard from "../components/TrendingJobCard";
+import softwareSvg from "../assets/trendingJobSvgs/softwareSvg.svg";
+import softwareSvgHover from "../assets/trendingJobSvgs/softwareSvgHover.svg";
+import machineSvg from "../assets/trendingJobSvgs/machineSvg.svg";
+import machineSvgHover from "../assets/trendingJobSvgs/machineSvgHover.svg";
+import eComSvg from "../assets/trendingJobSvgs/eComSvg.svg";
+import eComSvgHover from "../assets/trendingJobSvgs/eComSvgHover.svg";
+import UiSvg from "../assets/trendingJobSvgs/UiSvg.svg";
+import UiSvgHover from "../assets/trendingJobSvgs/UiSvgHover.svg";
+import { Link } from "react-router-dom";
+import dataAnalysicsBg from "../assets/dataAnalysicsBg.png";
+import globalLeaderPic from "../assets/globalLeaderPic.png";
 
 export default function AigronRecruitment() {
   const [isSearch, setIsSearch] = useState(false);
@@ -23,12 +35,7 @@ export default function AigronRecruitment() {
             Get the <span>Best Job You Deserve!</span>
           </div>
 
-          <button
-            onClick={() => {
-              setIsSearch(true);
-            }}
-            className="aigron__recuitment__main__container__content__input__wrapper"
-          >
+          <div className="aigron__recuitment__main__container__content__input__wrapper">
             <input
               type="text"
               placeholder="It is upto you to choose from 234344 Jobs"
@@ -69,8 +76,8 @@ export default function AigronRecruitment() {
                 </g>
               </svg>
             </button>
-          </button>
-          {isSearch ? (
+          </div>
+          {/* {isSearch ? (
             <div className="aigron__recuitment__main__container__content__input__model">
               {recentSearches.map((item) => (
                 <button
@@ -122,8 +129,97 @@ export default function AigronRecruitment() {
                 </button>
               ))}
             </div>
-          ) : null}
+          ) : null} */}
         </div>
+      </div>
+      <div className="trending__job__container">
+        <div className="trending__job__container__heading">
+          Trending <span>Jobs</span>
+        </div>
+        <div className="trending__job__container__content">
+          <TrendingJobCard
+            title="Software"
+            span="Development"
+            img={softwareSvg}
+            imgHover={softwareSvgHover}
+          />
+          <TrendingJobCard
+            title="Machine"
+            span="Learning"
+            img={machineSvg}
+            imgHover={machineSvgHover}
+          />
+          <TrendingJobCard
+            title="E-Commerce"
+            span="Website"
+            img={eComSvg}
+            imgHover={eComSvgHover}
+          />
+          <TrendingJobCard
+            title="Ui/Ux"
+            span="Designing"
+            img={UiSvg}
+            imgHover={UiSvgHover}
+          />
+        </div>
+        <div className="trending__job__container__view__all__footer">
+          <Link to="/" className="trending__job__container__view__all">
+            View All{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20.243"
+              height="13.501"
+              viewBox="0 0 20.243 13.501"
+            >
+              <path
+                id="Icon_ionic-ios-arrow-round-forward"
+                data-name="Icon ionic-ios-arrow-round-forward"
+                d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z"
+                transform="translate(-7.875 -11.252)"
+                fill="#04133b"
+              />
+            </svg>
+          </Link>
+        </div>
+      </div>
+      <div className="data__analytics__container">
+        <img
+          src={dataAnalysicsBg}
+          alt="dataAnalysicsBg"
+          className="data__analytics__container__img"
+        />
+        <div className="data__analytics__container__content">
+          <div className="data__analytics__container__content__heading">
+            DATA & ANALYTICS <br />
+            <span>
+              RECRUITMENT <br /> SOLUTIONS!
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="global__leader__container">
+        <div className="global__leader__container__content">
+          <div className="global__leader__container__content__heading">
+            THE GLOBAL LEADER IN
+            <br />
+            <span>
+              RECRUITMENT <br /> SOLUTIONS!
+            </span>
+          </div>
+          <div className="global__leader__container__content__para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque,
+            ducimus a expedita magni, pariatur, dolorum praesentium aliquid unde
+            explicabo sapiente? Expedita a quas ad ipsa fugiat sunt harum ea
+            facilis vero alias doloribus iure, delectus ut quae rerum enim
+            laborum sapiente ipsum quia saepe odio assumenda illum nisi!
+            Possimus?
+          </div>
+        </div>
+        <img
+          src={globalLeaderPic}
+          alt="globalLeaderPic"
+          className="global__leader__container__img"
+        />
       </div>
     </>
   );

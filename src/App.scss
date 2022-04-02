@@ -80,7 +80,7 @@ body {
   width: 100%;
   background: transparent;
   z-index: 999;
-  position: fixed;
+  position: absolute;
   top: 0px;
 }
 .header__wrapper {
@@ -116,7 +116,7 @@ body {
 }
 .nav__link {
   position: relative;
-  margin-left: 1em;
+  margin-left: 0.6em;
 }
 .nav__link__input {
   position: absolute;
@@ -129,10 +129,10 @@ body {
   background-color: #6ba53a;
 }
 .nav__link__content {
-  padding: 0.6em 1.5em;
+  padding: 0.6em 1em;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #000000;
 }
@@ -144,7 +144,7 @@ body {
 }
 .aigron__recuitment__main__container {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   position: relative;
   background-image: url("./assets/AigronRecruitmentBg.png");
   background-repeat: no-repeat;
@@ -172,17 +172,23 @@ body {
 .aigron__recuitment__main__container__content__input__wrapper {
   width: 50%;
   background: #fff;
-  padding: 1.3em;
+  border: 1px solid #fff;
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
   border-radius: 12px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 300ms ease-in-out;
+  margin-bottom: 8em;
+}
+.aigron__recuitment__main__container__content__input__wrapper:focus-within {
+  border: 1px solid #6ba53a;
   transition: 300ms ease-in-out;
 }
 .aigron__recuitment__main__container__content__input__wrapper:hover {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid #6ba53a;
   transition: 300ms ease-in-out;
 }
 .aigron__recuitment__main__container__content__input__model {
@@ -228,6 +234,191 @@ body {
   background: transparent;
   padding: 0;
   cursor: pointer;
+  text-align: start;
+}
+.trending__job__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: -8em;
+  position: relative;
+  z-index: 999;
+}
+.trending__job__container__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trending__job__container__heading {
+  font-size: 22px;
+  color: #000000;
+  margin-bottom: 0.6em;
+}
+.trending__job__container__heading span {
+  font-weight: 600;
+}
+.trending__job__container__content__card {
+  width: 23%;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.trending__job__container__content__card:hover {
+  background: #6ba53a;
+  transform: scale(1.03);
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+.trending__job__container__content__card:hover
+  .trending__job__container__content__card__title {
+  color: #fff;
+  transition: 300ms ease-in-out;
+}
+.trending__job__container__content__card:hover
+  .trending__job__container__content__card__img__hover {
+  display: flex;
+}
+.trending__job__container__content__card:hover
+  .trending__job__container__content__card__img {
+  display: none;
+}
+.trending__job__container__content__card__img {
+  margin-bottom: 2em;
+  width: 90px;
+}
+.trending__job__container__content__card__img__hover {
+  margin-bottom: 2em;
+  width: 90px;
+  display: none;
+}
+.trending__job__container__content__card__title {
+  font-size: 16px;
+  color: #000000;
+}
+.trending__job__container__content__card__title span {
+  font-weight: 600;
+}
+.trending__job__container__view__all {
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.trending__job__container__view__all__footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.trending__job__container__view__all svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 0.8em;
+}
+.trending__job__container__view__all::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #6ba53a;
+}
+.data__analytics__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  height: 350px;
+  position: relative;
+  margin: 0px auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.data__analytics__container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.data__analytics__container__content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+.data__analytics__container__content__heading {
+  font-size: 26px;
+  color: #fff;
+}
+.data__analytics__container__content__heading span {
+  font-weight: 600;
+}
+.global__leader__container__content__heading {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+}
+.global__leader__container__content__heading span {
+  font-weight: 600;
+}
+.global__leader__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  margin: 0px auto;
+}
+.global__leader__container__content {
+  width: 50%;
+}
+.global__leader__container__img {
+  width: 400px;
+}
+.global__leader__container__content__para {
+  font-size: 15px;
+  color: #000000;
+  margin-top: 0.4em;
+}
+@media (max-width: 1050px) {
+  .aigron__recuitment__main__container__content__input__wrapper {
+    width: 100%;
+  }
+  .aigron__recuitment__main__container__content__input__model {
+    width: 100%;
+  }
+  .trending__job__container__content__card {
+    width: 49%;
+    margin-bottom: 1em;
+  }
+  .global__leader__container {
+    flex-direction: column;
+  }
+  .global__leader__container__content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
 }
 @media (max-width: 800px) {
   .header__mobile__btn {
@@ -260,6 +451,15 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .data__analytics__container__img {
+    display: none;
+  }
+  .data__analytics__container__content {
+    width: 100%;
+    text-align: center;
+    background: #6a6a6a;
+    justify-content: center;
+  }
   .onboarding__container {
     flex-direction: column;
   }
@@ -271,5 +471,16 @@ body {
   }
   .onboarding__container__logo {
     display: none;
+  }
+}
+@media (max-width: 550px) {
+  .global__leader__container__img {
+    width: 300px;
+  }
+  .trending__job__container__content__card {
+    width: 100%;
+  }
+  .aigron__recuitment__main__container__content__heading {
+    text-align: center;
   }
 }
