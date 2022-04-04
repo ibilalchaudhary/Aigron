@@ -6,6 +6,7 @@ import Onboarding from "./screens/Onboarding";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AigronProjects from "./screens/AigronProjects";
+import AboutUs from "./screens/AboutUs";
 
 function App() {
   const [isWellcome, setIsWellcome] = useState(false);
@@ -21,6 +22,7 @@ function App() {
           />
           <Route path="/aigron_recruitment" element={<AigronRecruitment />} />
           <Route path="/aigron_projects" element={<AigronProjects />} />
+          <Route path="/about_us" element={<AboutUs />} />
         </Routes>
       </div>
       {isWellcome ? null : <Footer />}
