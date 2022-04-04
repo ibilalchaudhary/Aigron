@@ -1014,6 +1014,82 @@ body {
   width: 100%;
   padding: 2em;
 }
+.business__meet__container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  margin: 0px auto;
+  max-width: 1440px;
+  padding: 2em;
+}
+.business__meet__container__heading {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.business__meet__container__content__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.business__meet__container__img {
+  width: 450px;
+}
+.business__meet__container__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.business__meet__container__content__card {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f9f9f9;
+  margin-bottom: 1em;
+  padding: 1.5em;
+  border-radius: 20px;
+}
+.business__meet__container__content__card__img {
+  width: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: -20px;
+}
+.business__meet__container__content__card__img svg {
+  width: 60px;
+}
+.business__meet__container__content__card__content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.business__meet__container__content__card__content__heading {
+  font-size: 18px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.business__meet__container__content__card__content__heading span {
+  font-weight: 600;
+}
+.business__meet__container__content__card__content__para {
+  font-size: 14px;
+  color: #313131;
+}
 @media (max-width: 1440px) {
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
@@ -1032,6 +1108,16 @@ body {
   }
   .work__across__container__left {
     width: 100%;
+  }
+  .business__meet__container__heading {
+    margin-top: 4em;
+  }
+  .business__meet__container__content__wrapper {
+    flex-direction: column;
+  }
+  .business__meet__container__content {
+    width: 100%;
+    margin-top: 2em;
   }
 }
 @media (max-width: 1050px) {
@@ -1103,6 +1189,12 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .business__meet__container__content__card {
+    width: 100%;
+  }
+  .business__meet__container__img {
+    width: 300px;
+  }
   .work__across__container__content__card {
     width: 48%;
   }
