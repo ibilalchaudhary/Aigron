@@ -26,6 +26,7 @@ import utilSvg from "../assets/workAcossSvgs/utilSvg.svg";
 import markSvg from "../assets/workAcossSvgs/markSvg.svg";
 import enterSvg from "../assets/workAcossSvgs/enterSvg.svg";
 import businessMeetSvg from "../assets/businessMeetSvg.svg";
+import TestimonialSection from "../components/TestimonialSection";
 
 function BusinessMeetsCard() {
   return (
@@ -671,6 +672,39 @@ export default function AigronProjects() {
           <WeAcrossCard title="Social Networking" svg={markSvg} />
         </div>
       </div>
+      <div className="clients__counter__container">
+        <div className="clients__counter__container__content">
+          <div className="clients__counter__container__content__col">
+            <div className="clients__counter__container__content__col__entry">
+              10+
+              <span>Years in remote</span>
+              <span>Software Development</span>
+            </div>
+          </div>
+          <div className="clients__counter__container__content__col">
+            <div className="clients__counter__container__content__col__entry">
+              150+
+              <span>Digital Solution</span>
+              <span>Delivered</span>
+            </div>
+          </div>
+          <div className="clients__counter__container__content__col">
+            <div className="clients__counter__container__content__col__entry">
+              200
+              <span>Experts</span>
+              <span>on board</span>
+            </div>
+          </div>
+          <div className="clients__counter__container__content__col">
+            <div className="clients__counter__container__content__col__entry">
+              9/10
+              <span>projects conducted</span>
+              <span>remotely</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <TestimonialSection />
       <div className="business__meet__container">
         <div className="business__meet__container__heading">
           Where business meets cutting-edge <br /> technology

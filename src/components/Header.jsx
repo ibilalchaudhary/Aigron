@@ -82,7 +82,7 @@ export default function Header() {
                 className="nav__link__input"
                 name="nav__link__input"
                 onClick={() => {
-                  navigate("/");
+                  navigate("/aigron_projects");
                 }}
               />
               <div className="nav__link__content">Aigron Projects</div>
