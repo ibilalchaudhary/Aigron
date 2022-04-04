@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import aigronProjectBg from "../assets/aigronProjectBg.png";
-import AigronRecruitmentBg from "../assets/AigronRecruitmentBg.png";
-import clientLogo from "../assets/clientLogo.png";
+import aigronProjectBg from "../assets/aigronProjectBg.jpg";
+import AigronRecruitmentBg from "../assets/AigronRecruitmentBg.jpg";
+import clientLogo from "../assets/clientLogo.jpg";
 import WhatWeDoCard from "../components/WhatWeDoCard";
 import artificialSvg from "../assets/WhatWeDoSvgs/artificialSvg.svg";
 import artificialSvgHover from "../assets/WhatWeDoSvgs/artificialSvgHover.svg";

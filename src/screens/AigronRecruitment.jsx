@@ -9,9 +9,9 @@ import eComSvgHover from "../assets/trendingJobSvgs/eComSvgHover.svg";
 import UiSvg from "../assets/trendingJobSvgs/UiSvg.svg";
 import UiSvgHover from "../assets/trendingJobSvgs/UiSvgHover.svg";
 import { Link } from "react-router-dom";
-import dataAnalysicsBg from "../assets/dataAnalysicsBg.png";
-import globalLeaderPic from "../assets/globalLeaderPic.png";
-import dataScienceBg from "../assets/dataScienceBg.png";
+import dataAnalysicsBg from "../assets/dataAnalysicsBg.jpg";
+import globalLeaderPic from "../assets/globalLeaderPic.jpg";
+import dataScienceBg from "../assets/dataScienceBg.jpg";
 
 export default function AigronRecruitment() {
   const [isSearch, setIsSearch] = useState(false);
