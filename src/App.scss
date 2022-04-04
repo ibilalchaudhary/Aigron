@@ -1310,7 +1310,7 @@ body {
 .more__than__software__house__container {
   width: 100%;
   height: fit-content;
-  min-height: 55vh;
+  min-height: 40vh;
   background: url("./assets/morethanSofwareBg.jpg") no-repeat;
   background-size: cover;
   margin-top: -2em;
@@ -1325,6 +1325,7 @@ body {
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .more__than__software__house__container__left {
   width: 30%;
@@ -1342,12 +1343,88 @@ body {
   color: #fff;
   font-size: 15px;
 }
+.drive__us__to__excel__container {
+  width: 100%;
+  height: fit-content;
+  min-height: 70vh;
+  background: url("./assets//drivestoExcel.jpg") no-repeat;
+  background-size: cover;
+}
+.drive__us__to__excel__container__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 6em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.drive__us__to__excel__container__heading {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+}
+.drive__us__to__excel__container__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6em;
+}
+.drive__us__to__excel__container__content__img {
+  width: 500px;
+}
+.drive__us__to__excel__container__content__right {
+  width: 50%;
+}
+.drive__us__to__excel__container__content__right__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.drive__us__to__excel__container__content__right__content__card {
+  width: 48%;
+  margin-bottom: 2em;
+  background: #6ba53a;
+  height: fit-content;
+  min-height: 300px;
+  padding: 1.5em;
+  border-radius: 20px;
+}
+.drive__us__to__excel__container__content__right__content__card:nth-child(1) {
+  margin-top: -4em;
+}
+.drive__us__to__excel__container__content__right__content__card:nth-child(3) {
+  margin-top: -4em;
+}
+.drive__us__to__excel__container__content__right__content__card__heading {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0.5em 0em;
+}
+.drive__us__to__excel__container__content__right__content__card__para {
+  font-size: 14px;
+  color: #fff;
+}
 @media (max-width: 1440px) {
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
   }
 }
 @media (max-width: 1150px) {
+  .drive__us__to__excel__container__content {
+    flex-direction: column;
+  }
+  .drive__us__to__excel__container__content__right {
+    width: 100%;
+    margin-top: 5em;
+  }
+  .drive__us__to__excel__container__content__right__content__card {
+    margin: 0px !important;
+    margin-bottom: 2em !important;
+  }
   .clients__counter__container {
     padding: 2em;
   }
@@ -1381,6 +1458,15 @@ body {
   }
 }
 @media (max-width: 1050px) {
+  .more__than__software__house__container__content {
+    flex-direction: column;
+  }
+  .more__than__software__house__container__left {
+    width: 100%;
+  }
+  .more__than__software__house__container__right {
+    width: 100%;
+  }
   .tangible__result__container__overlay__content__card {
     width: 100%;
     margin-bottom: 1em;
@@ -1512,6 +1598,15 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .drive__us__to__excel__container__content__right__content__card {
+    width: 100%;
+  }
+  .drive__us__to__excel__container__heading {
+    text-align: center;
+  }
+  .drive__us__to__excel__container__content__img {
+    width: 300px;
+  }
   .tangible__result__container {
     height: 90vh;
   }

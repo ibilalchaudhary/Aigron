@@ -1,140 +1,161 @@
 import React, { useState } from "react";
 import aboutUsBg from "../assets/aboutUsBg.jpg";
 import AigronRecruitmentBg from "../assets/AigronRecruitmentBg.jpg";
-import tengibleBg from "../assets/tengibleBg.png";
-import workAcress from "../assets/workAcress.png";
-import clientLogo from "../assets/clientLogo.svg";
-import WhatWeDoCard from "../components/WhatWeDoCard";
-import artificialSvg from "../assets/WhatWeDoSvgs/artificialSvg.svg";
-import artificialSvgHover from "../assets/WhatWeDoSvgs/artificialSvgHover.svg";
-import cloudSvg from "../assets/WhatWeDoSvgs/cloudSvg.svg";
-import cloudSvgHover from "../assets/WhatWeDoSvgs/cloudSvgHover.svg";
-import ideationSvg from "../assets/WhatWeDoSvgs/ideationSvg.svg";
-import ideationSvgHover from "../assets/WhatWeDoSvgs/ideationSvgHover.svg";
-import machineSvg from "../assets/WhatWeDoSvgs/machineSvg.svg";
-import machineSvgHover from "../assets/WhatWeDoSvgs/machineSvgHover.svg";
-import productSvg from "../assets/WhatWeDoSvgs/productSvg.svg";
-import productSvgHover from "../assets/WhatWeDoSvgs/productSvgHover.svg";
-import softwareSvg from "../assets/WhatWeDoSvgs/softwareSvg.svg";
-import softwareSvgHover from "../assets/WhatWeDoSvgs/softwareSvgHover.svg";
-import webSvg from "../assets/WhatWeDoSvgs/webSvg.svg";
-import webSvgHover from "../assets/WhatWeDoSvgs/webSvgHover.svg";
-import cartSvg from "../assets/workAcossSvgs/cartSvg.svg";
-import lifeSvg from "../assets/workAcossSvgs/lifeSvg.svg";
-import arSvg from "../assets/workAcossSvgs/arSvg.svg";
-import utilSvg from "../assets/workAcossSvgs/utilSvg.svg";
-import markSvg from "../assets/workAcossSvgs/markSvg.svg";
-import enterSvg from "../assets/workAcossSvgs/enterSvg.svg";
-import businessMeetSvg from "../assets/businessMeetSvg.svg";
+import drivestoExcelPic from "../assets/drivestoExcelPic.png";
 import TestimonialSection from "../components/TestimonialSection";
 
-function BusinessMeetsCard() {
+function DriveExcelCard() {
   return (
-    <div className="business__meet__container__content__card">
-      <div className="business__meet__container__content__card__img">
-        <svg
-          id="Group_11553"
-          data-name="Group 11553"
-          xmlns="http://www.w3.org/2000/svg"
-          width="101.051"
-          height="100.88"
-          viewBox="0 0 101.051 100.88"
-        >
-          <defs>
-            <clipPath id="clip-path">
-              <rect
-                id="Rectangle_9"
-                data-name="Rectangle 9"
-                width="101.051"
-                height="100.88"
-                fill="#6ba53a"
-              />
-            </clipPath>
-          </defs>
-          <g id="Group_7" data-name="Group 7" clip-path="url(#clip-path)">
+    <div className="drive__us__to__excel__container__content__right__content__card">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="78.039"
+        height="62.626"
+        viewBox="0 0 78.039 62.626"
+      >
+        <defs>
+          <clipPath id="clip-path">
+            <rect
+              id="Rectangle_7136"
+              data-name="Rectangle 7136"
+              width="78.039"
+              height="62.626"
+              fill="#fcfcfc"
+            />
+          </clipPath>
+        </defs>
+        <g id="Group_11522" data-name="Group 11522" transform="translate(0)">
+          <g
+            id="Group_10461"
+            data-name="Group 10461"
+            transform="translate(0)"
+            clip-path="url(#clip-path)"
+          >
             <path
-              id="Path_3"
-              data-name="Path 3"
-              d="M60.927,49.321c2.442-.976,4.625-1.776,6.728-2.75a2.126,2.126,0,0,0,.86-1.6c.169-4.306.139-4.307,4.522-4.305,3.045,0,6.091-.016,9.136.006,2.072.015,2.663.616,2.727,2.654.092,2.937.092,2.936,2.877,3.98a2.76,2.76,0,0,1,.5.206c2.494,1.547,4.806,2.3,6.862-.8.627-.947,1.863-.656,2.695.162q4.277,4.209,8.509,8.464c1.112,1.124.826,2.2-.206,3.279-2.2,2.295-2.174,2.316-.9,5.133a4.8,4.8,0,0,1,.421.986c.523,2.668,1.769,4.177,4.832,3.63,1.4-.249,2.141.8,2.139,2.248-.005,3.822.019,7.643-.01,11.465-.014,1.819-.67,2.609-2.529,2.406-2.449-.268-3.841.5-4.185,2.989a2.334,2.334,0,0,1-.4.99c-1.65,2.319-1.686,4.3.88,6.09,1.1.771.916,2.018-.032,2.973q-4.162,4.2-8.371,8.35c-1.192,1.179-2.292.89-3.422-.191-2.249-2.152-2.272-2.128-5.121-.846a3.562,3.562,0,0,1-.655.286c-2.744.6-4.625,1.74-3.958,5.114.229,1.162-.785,1.947-2.069,1.952-4,.014-8,.021-12,0a1.984,1.984,0,0,1-2.15-2.459c.337-2.48-.484-3.88-3.044-4.289a6.457,6.457,0,0,1-2.6-1.155c-1.379-.983-2.241-.54-3.291.583-2.3,2.458-2.8,2.4-5.17.027-2.322-2.323-4.658-4.631-6.973-6.961-1.535-1.545-1.519-2.337.02-3.906A12.643,12.643,0,0,1,48.68,92.9a1.475,1.475,0,0,0,.391-2.147,41.64,41.64,0,0,1-2.077-4.942,1.629,1.629,0,0,0-1.789-1.292c-4.373-.073-4.373-.109-4.372-4.552,0-2.986-.01-5.972.008-8.957.013-2.083.588-2.653,2.647-2.706a7.063,7.063,0,0,1,1.253.005c1.366.213,2-.348,2.391-1.69a27.333,27.333,0,0,1,1.965-4.6A1.485,1.485,0,0,0,48.769,60c-3.091-3.236-3.07-3.255.1-6.417,2.029-2.025,4.05-4.057,6.086-6.074,1.8-1.786,2.5-1.785,4.3.006.591.587,1.136,1.221,1.673,1.8M44.934,72.1v8.5c.733,0,1.322,0,1.911,0,2.671.019,2.7.135,3.536,2.775a39.967,39.967,0,0,0,2.24,5.64c1.737,3.517,1.8,3.484-.913,6.444-.15.164-.229.392-.171.289l5.924,6.078c.381-.471.832-1.024,1.279-1.581,1.18-1.471,2.39-1.434,4.061-.565a54.289,54.289,0,0,0,7.576,3.093c1.469.5,2.245,1.216,2.142,2.8-.053.816-.009,1.639-.009,2.538h8.434c0-.745,0-1.332,0-1.918.019-2.7.107-2.713,2.763-3.522a36.233,36.233,0,0,0,5.331-2.046c3.9-1.9,3.869-1.956,7.037.929.076.069.215.069-.142-.035l6.2-5.97c-.556-.472-1.2-1-1.828-1.555a2.385,2.385,0,0,1-.492-3.191c1.273-2.744,2.393-5.563,3.479-8.388a2.327,2.327,0,0,1,2.337-1.808c.981.005,1.961,0,2.929,0V72.245c-.749,0-1.388,0-2.027,0-2.51-.022-2.658-.226-3.427-2.69a31.54,31.54,0,0,0-2.141-5.487c-2.256-4.222-2.318-3.454.945-6.9.072-.076.076-.216.1-.3l-6.14-6.11a8.427,8.427,0,0,1-1,1.648c-1.8,1.865-2.05,1.754-4.307.65a54.087,54.087,0,0,0-7.26-2.946c-1.611-.515-2.513-1.219-2.362-2.985.064-.755.011-1.52.011-2.37H72.589c-.031.679-.071,1.206-.077,1.734-.032,2.892-.088,2.859-2.79,3.684a36.344,36.344,0,0,0-5.487,2.135c-3.665,1.811-3.633,1.871-6.745-.939A4.686,4.686,0,0,0,56.63,51c-.776.9-1.576,1.951-2.5,2.876-.955.958-2.03,1.8-3.107,2.734.761.8,1.157,1.239,1.57,1.655,1.9,1.915,1.878,2.113.616,4.455a20.143,20.143,0,0,0-2.2,4.874c-.746,3.3-1.91,5.72-6.078,4.5"
-              transform="translate(-26.2 -26.089)"
-              fill="#6ba53a"
+              id="Path_8514"
+              data-name="Path 8514"
+              d="M21.385,84.266c-1.661-1.721-3.049-3.4-4.685-4.789a5.563,5.563,0,0,1-2.171-5.4c.129-.928-.009-1.89.031-2.834a1.54,1.54,0,0,0-1.2-1.68,6.34,6.34,0,0,0-.621,1.583c-.1.935-.009,1.889-.028,2.834a11.361,11.361,0,0,1-.177,1.25c-1.923-1.92-3.684-3.7-5.476-5.453-.514-.5-1.113-1.449-1.879-.627-.707.759.259,1.271.732,1.775s.983.98,1.721,1.711c-1.056.207-1.879.347-2.692.535-.585.136-1.548-.134-1.466.9s.988.665,1.589.668A27.152,27.152,0,0,0,8.21,74.6a2.554,2.554,0,0,1,2.24.829c1.32,1.291,2.723,2.5,4.091,3.739l-.259.449a8.925,8.925,0,0,1-.937.105c-1.121.012-2.242-.01-3.363.008-.544.009-1.218-.09-1.246.748-.03.922.717.824,1.277.834,1.786.031,3.573,0,5.359.023a1.668,1.668,0,0,1,1.066.273c1.237,1.256,2.412,2.574,3.636,3.9-.19.044-.508.125-.831.189a22.344,22.344,0,0,1-8.981-.211C5.713,84.53,2.3,82.071,1.009,77.3a21.993,21.993,0,0,1-.7-10.05A7.12,7.12,0,0,0,.4,66.519c.178-2,.184-2.082,2.155-2.139a62.084,62.084,0,0,1,7.752.031c4.146.4,7.655,2.088,9.746,5.959a17.88,17.88,0,0,1,1.82,8.424c.023,1.468-.093,2.939-.17,4.407a5.952,5.952,0,0,1-.322,1.065"
+              transform="translate(0 -50.76)"
+              fill="#fcfcfc"
             />
             <path
-              id="Path_4"
-              data-name="Path 4"
-              d="M3.919,49.365c.134,10.853,3,19.792,8.628,27.867.774,1.111,1.407,1.532,2.876,1.032a8.088,8.088,0,0,1,9.624,3.915A8.194,8.194,0,0,1,23.281,92.3a8.376,8.376,0,0,1-10.43.472,8.084,8.084,0,0,1-2.633-9.9,2.282,2.282,0,0,0-.365-2.7C-12.51,50.076,5.269,6.528,42.276.661A51.209,51.209,0,0,1,59.549.809,4.134,4.134,0,0,1,61.8,2a1.959,1.959,0,0,1-.062,1.934,3.048,3.048,0,0,1-2.154.8c-2.734-.163-5.454-.71-8.185-.754A46.536,46.536,0,0,0,4.438,43.6c-.344,2.234-.411,4.511-.519,5.761m13.938,41.05a4.356,4.356,0,0,0,4.268-4.373A4.45,4.45,0,0,0,17.7,81.791,4.4,4.4,0,0,0,13.451,86.2a4.312,4.312,0,0,0,4.406,4.218"
-              transform="translate(0 0)"
-              fill="#6ba53a"
+              id="Path_8515"
+              data-name="Path 8515"
+              d="M139.658,153.213c1.969,1.226,3.887,2.545,5.92,3.652a10.164,10.164,0,0,1,4.081,4.743,13.224,13.224,0,0,1,.747,2.054c.256.821-.092,1.157-.937,1.152-2.2-.011-4.408.027-6.613.029q-9.5.008-19,0c-.28,0-.56,0-.839-.024-.722-.062-.951-.389-.724-1.127a12.61,12.61,0,0,1,6.665-7.919c1.288-.647,2.4-1.632,3.638-2.4a1.425,1.425,0,0,1,1.148-.133,6.024,6.024,0,0,0,5.441-.1,2.31,2.31,0,0,1,.4-.141.783.783,0,0,1,.2,0Z"
+              transform="translate(-96.518 -120.837)"
+              fill="#fcfcfc"
             />
             <path
-              id="Path_5"
-              data-name="Path 5"
-              d="M120.339,112.2c-2.8-.3-5.591-.55-8.367-.9-2.442-.311-3.342-1.144-3.044-2.615.27-1.333,1.292-1.68,3.736-1.274a45.711,45.711,0,0,0,29.5-4.747,46.353,46.353,0,0,0,16.464-67.523c-.89-1.28-1.558-1.982-3.406-1.346a7.957,7.957,0,0,1-9.4-4.045,8.178,8.178,0,0,1,1.888-10.092A8.361,8.361,0,0,1,158,19.2a8.034,8.034,0,0,1,2.787,9.71,2.7,2.7,0,0,0,.442,3.165c22.141,29.941,4.235,73.578-32.512,79.239-2.764.426-5.566.6-8.373.893M153.188,21.6a4.363,4.363,0,0,0-4.4,4.24,4.446,4.446,0,0,0,4.289,4.384,4.4,4.4,0,0,0,4.382-4.273,4.307,4.307,0,0,0-4.271-4.351"
-              transform="translate(-69.861 -11.324)"
-              fill="#6ba53a"
+              id="Path_8516"
+              data-name="Path 8516"
+              d="M282.616,96.782c.035-1.752.308-3.253,2.1-4.056a4.359,4.359,0,0,1,3.253-.053,12.814,12.814,0,0,0,3.83.882,14.416,14.416,0,0,0,4.242-.916c1.5-.5,3.487-.353,4.3.933a5.759,5.759,0,0,1,.878,3.413,18.4,18.4,0,0,1-3.577,9.129,2.982,2.982,0,0,1-3.336,1.243,16.551,16.551,0,0,0-4.977.084,2.6,2.6,0,0,1-2.541-.79,16.37,16.37,0,0,1-3.355-6.437c-.314-1.133-.548-2.288-.819-3.433"
+              transform="translate(-223.203 -72.954)"
+              fill="#fcfcfc"
             />
             <path
-              id="Path_6"
-              data-name="Path 6"
-              d="M86.751,264.586c-.532-.709-1.362-1.357-1.524-2.143a1.677,1.677,0,0,1,1.743-2c1.22-.062,2.173.664,2,1.907-.107.788-.911,1.481-1.4,2.217l-.821.017"
-              transform="translate(-54.663 -167.118)"
-              fill="#6ba53a"
+              id="Path_8517"
+              data-name="Path 8517"
+              d="M146.563,87.029c.938-.068,1.733-.065,2.506-.193a25.145,25.145,0,0,0,9.361-3.458,1.633,1.633,0,0,1,1.356.232c.786.5,1.423,1.249,2.229,1.7a3.771,3.771,0,0,0,1.969.425c.809-.045,1.065.275.94.951-.241,1.3-.478,2.585-1.918,3.266-.489.231-.753.951-1.1,1.461a39.688,39.688,0,0,1-2.89,4.192,4.348,4.348,0,0,1-6.94-.036,52.852,52.852,0,0,1-3.174-4.742,4.293,4.293,0,0,0-1.2-1.095,2.437,2.437,0,0,1-1.141-2.7"
+              transform="translate(-115.672 -65.789)"
+              fill="#fcfcfc"
             />
             <path
-              id="Path_7"
-              data-name="Path 7"
-              d="M188.676,9.073c.514.718,1.31,1.378,1.475,2.169a1.659,1.659,0,0,1-1.75,1.984,1.732,1.732,0,0,1-2-1.938c.1-.784.949-1.472,1.462-2.2l.816-.012"
-              transform="translate(-119.596 -5.822)"
-              fill="#6ba53a"
+              id="Path_8518"
+              data-name="Path 8518"
+              d="M166.105,48.023c0,.21.01.421,0,.63-.056,1-.521,1.3-1.35.706a10.953,10.953,0,0,1-2.308-2.108c-.709-.913-1.241-.689-2-.144a20.287,20.287,0,0,1-9.548,3.685c-1.313.156-1.656-.116-1.572-1.4.286-4.39,2.207-7.881,6.712-9.4a6.389,6.389,0,0,1,5.673,1.084c1.054.7,2.33,1.066,3.029,2.277a9.7,9.7,0,0,1,1.369,4.665"
+              transform="translate(-117.921 -31.368)"
+              fill="#fcfcfc"
             />
             <path
-              id="Path_8"
-              data-name="Path 8"
-              d="M95.6,111.393a16.271,16.271,0,1,1,16.3,16.262,16.219,16.219,0,0,1-16.3-16.262m28.581-.064a12.31,12.31,0,1,0-12.185,12.38,12.272,12.272,0,0,0,12.185-12.38"
-              transform="translate(-61.343 -61.066)"
-              fill="#4e5f60"
+              id="Path_8519"
+              data-name="Path 8519"
+              d="M80.8,14.092c-2.029-1-1.845-.925-.679-2.591a25.982,25.982,0,0,1,9.859-8.551A54.189,54.189,0,0,1,96.342.658c2.613-.9,5.321-.608,8.007-.624a22.571,22.571,0,0,1,8.224,1.808,26.043,26.043,0,0,1,12.441,9.833,57.209,57.209,0,0,1,2.839,4.986c.289.529.179.881-.558.772a2.47,2.47,0,0,1-2.039-1.5A25.661,25.661,0,0,0,112.985,4.1,24.4,24.4,0,0,0,98.638,2.168,25.106,25.106,0,0,0,80.8,14.092"
+              transform="translate(-62.591 0)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8520"
+              data-name="Path 8520"
+              d="M140.926,239.541c0-1.714-.012-3.429.006-5.143.014-1.335.3-1.6,1.605-1.6.77,0,1.541.032,2.308-.009a1.175,1.175,0,0,1,1.394,1.307q.034,5.51,0,11.02a1.2,1.2,0,0,1-1.449,1.352c-.766-.052-1.539,0-2.308-.011-1.224-.012-1.534-.305-1.549-1.563-.021-1.784-.005-3.568,0-5.352"
+              transform="translate(-111.294 -183.848)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8521"
+              data-name="Path 8521"
+              d="M213.068,239.6c0-1.854.024-3.709-.012-5.562-.016-.843.3-1.228,1.155-1.2.979.032,1.959,0,2.938.019a.961.961,0,0,1,1.08,1.1q-.02,5.719,0,11.439a.974.974,0,0,1-1.1,1.091c-.979.015-1.959-.01-2.938.011-.789.017-1.138-.316-1.126-1.126.028-1.924.009-3.848.008-5.772"
+              transform="translate(-168.265 -183.888)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8522"
+              data-name="Path 8522"
+              d="M243.976,245.258c0-1.4-.013-2.8,0-4.2.011-1.063.363-1.376,1.5-1.4,1.529-.033,1.872.152,1.888,1.3q.062,4.41,0,8.82c-.013,1.057-.437,1.3-1.836,1.26-1.147-.033-1.543-.365-1.554-1.365-.016-1.47,0-2.94-.006-4.41"
+              transform="translate(-192.681 -189.272)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8523"
+              data-name="Path 8523"
+              d="M121.672,245.414c0,1.4.018,2.794-.006,4.191-.02,1.16-.371,1.442-1.677,1.437s-1.671-.3-1.675-1.436q-.015-4.244,0-8.487c0-1.188.309-1.447,1.632-1.455,1.442-.009,1.709.2,1.728,1.454.022,1.432.005,2.864.005,4.3Z"
+              transform="translate(-93.434 -189.28)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8524"
+              data-name="Path 8524"
+              d="M260.042,185.774a25.028,25.028,0,0,0,6.517-6.817c.833-1.321,1.536-2.726,2.253-4.116.475-.92,1.162-.224,1.745-.3.035.373.216.812.083,1.11a28.526,28.526,0,0,1-7.463,10.208c-1.48,1.271-1.467,1.287-3.136-.082"
+              transform="translate(-205.374 -137.704)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8525"
+              data-name="Path 8525"
+              d="M79.744,188.381a3.576,3.576,0,0,1-.992.628,1.591,1.591,0,0,1-1.21-.1,26.428,26.428,0,0,1-7.533-9.485c-.044-.095-.081-.193-.127-.287-.235-.477-.973-.973-.188-1.474.69-.44,1.655.069,2.1.825a36.574,36.574,0,0,0,2.978,4.757c1.487,1.813,3.259,3.393,4.973,5.141"
+              transform="translate(-54.763 -140.181)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8526"
+              data-name="Path 8526"
+              d="M323.322,64.755c-.263-2.409,1.576-4.086,3.962-4.353.74-.083,1.2.184,1.274,1.006.152,1.8.121,3.557-1.659,4.624a7.374,7.374,0,0,1-2.228.84,1.034,1.034,0,0,1-1.345-1.069c-.022-.348,0-.7,0-1.048"
+              transform="translate(-255.331 -47.693)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8527"
+              data-name="Path 8527"
+              d="M174.7,260.982c.977,0,1.955.028,2.93-.01.672-.026.9.291.8.887-.094.574.338,1.484-.762,1.5q-3.086.047-6.174-.011c-1.1-.021-.656-.93-.757-1.5-.111-.629.186-.881.822-.863,1.045.03,2.093.008,3.139.008v-.01"
+              transform="translate(-134.824 -206.108)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8528"
+              data-name="Path 8528"
+              d="M263.828,262.025l.923-.983c.328.393.917.789.913,1.178s-.589.792-.92,1.187l-.916-1.382"
+              transform="translate(-208.364 -206.164)"
+              fill="#fcfcfc"
+            />
+            <path
+              id="Path_8529"
+              data-name="Path 8529"
+              d="M108.093,262.085l-.771,1.378c-.312-.4-.838-.78-.87-1.2-.026-.35.527-.743.824-1.117l.817.938"
+              transform="translate(-84.072 -206.247)"
+              fill="#fcfcfc"
             />
           </g>
-        </svg>
+        </g>
+      </svg>
+      <div className="drive__us__to__excel__container__content__right__content__card__heading">
+        Transparency
       </div>
-      <div className="business__meet__container__content__card__content">
-        <div className="business__meet__container__content__card__content__heading">
-          Machine
-          <span>Learning</span>
-        </div>
-        <div className="business__meet__container__content__card__content__para">
-          We transform bold business ideas into exceptional digital products.
-          Searching for a partner that will take the process of software
-          development off your hands? You’ve come to the right place.
-        </div>
+      <div className="drive__us__to__excel__container__content__right__content__card__para">
+        We’re changing the way you travel in Pakistan. While short-term rentals
+        are on a rise in the country, they are often. Our properties come with
+        on-site concierge and consistent amenities – allowing you to en. We’re
+        changing the way you travel in Pakistan. While short-term rentals are on
+        a rise in the country, they are often.{" "}
       </div>
-    </div>
-  );
-}
-
-function WeAcrossCard({ svg, title }) {
-  return (
-    <div className="work__across__container__content__card">
-      <img
-        src={svg}
-        alt="workAcrossSvg"
-        className="work__across__container__content__card__img"
-      />
-      <div className="work__across__container__content__card__heading">
-        {title}
-      </div>
-    </div>
-  );
-}
-
-function ClientCardLogo() {
-  return (
-    <div className="clients__container__left__images__card">
-      <img
-        src={clientLogo}
-        alt="clientLogo"
-        className="clients__container__left__images__card__img"
-      />
     </div>
   );
 }
@@ -194,6 +215,53 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+      <div className="drive__us__to__excel__container">
+        <div className="drive__us__to__excel__container__wrapper">
+          <div className="drive__us__to__excel__container__heading">
+            We believe in what we do and that drives us to excel
+          </div>
+          <div className="drive__us__to__excel__container__content">
+            <img
+              src={drivestoExcelPic}
+              alt="drivestoExcelPic"
+              className="drive__us__to__excel__container__content__img"
+            />
+            <div className="drive__us__to__excel__container__content__right">
+              <div className="drive__us__to__excel__container__content__right__content">
+                <DriveExcelCard />
+                <DriveExcelCard />
+                <DriveExcelCard />
+                <DriveExcelCard />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <TestimonialSection />
+      {/* <div className="work__across__container">
+        <div className="work__across__container__left">
+          <div className="work__across__container__left__img__wrapper">
+            <img
+              src={workAcress}
+              alt="workAcress"
+              className="work__across__container__left__img"
+            />
+          </div>
+          <div className="work__across__container__left__img__wrapper__overlay">
+            <div className="work__across__container__left__img__wrapper__overlay__heading">
+              We Work Across <br /> Many Industries – <span> Find Yours!</span>
+            </div>
+          </div>
+        </div>
+        <div className="work__across__container__content">
+          <WeAcrossCard title="E-Commerce Apps" svg={cartSvg} />
+          <WeAcrossCard title="LifeStyle" svg={lifeSvg} />
+          <WeAcrossCard title="AR Apps" svg={arSvg} />
+          <WeAcrossCard title="Utility Apps" svg={utilSvg} />
+          <WeAcrossCard title="Enterprise Apps" svg={enterSvg} />
+          <WeAcrossCard title="Social Networking" svg={markSvg} />
+        </div>
+      </div> */}
     </>
   );
 }
