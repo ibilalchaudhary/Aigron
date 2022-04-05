@@ -118,7 +118,7 @@ export default function Header() {
                 className="nav__link__input"
                 name="nav__link__input"
                 onClick={() => {
-                  navigate("/");
+                  navigate("/blog");
                 }}
               />
               <div className="nav__link__content">Blogs</div>
