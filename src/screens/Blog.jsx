@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import blogBg from "../assets/blogBg.jpg";
 import blogPic from "../assets/blogPic.jpg";
 
 function BlogCard() {
   return (
-    <div className="blog__container__wrapper__card">
+    <Link to="/blog_details" className="blog__container__wrapper__card">
       <img
         src={blogPic}
         alt="blogPic"
@@ -20,7 +21,7 @@ function BlogCard() {
           since the 1500s
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
