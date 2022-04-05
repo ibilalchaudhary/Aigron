@@ -162,8 +162,10 @@ export default function AigronRecruitment() {
           />
         </div>
         <div className="trending__job__container__view__all__footer">
-          <Link to="/" className="trending__job__container__view__all">
-            View All{" "}
+          <button className="trending__job__container__view__all">
+            <div className="trending__job__container__view__all__heading">
+              View All
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20.243"
@@ -178,7 +180,7 @@ export default function AigronRecruitment() {
                 fill="#04133b"
               />
             </svg>
-          </Link>
+          </button>
         </div>
       </div>
       <div className="data__analytics__container">

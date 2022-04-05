@@ -1,8 +1,34 @@
 import React, { useState } from "react";
 import aboutUsBg from "../assets/aboutUsBg.jpg";
 import AigronRecruitmentBg from "../assets/AigronRecruitmentBg.jpg";
+import workAcress from "../assets/workAcress.png";
 import drivestoExcelPic from "../assets/drivestoExcelPic.png";
 import TestimonialSection from "../components/TestimonialSection";
+import partnerAward from "../assets/partnerAward.png";
+import ProjectNav from "../components/ProjectNav";
+import projectSvg from "../assets/projectSvg.png";
+import projectPic1 from "../assets/projectPic1.png";
+import projectPic2 from "../assets/projectPic2.png";
+
+function IndustryPartnerCard() {
+  return (
+    <div className="we__partner__container__content__card">
+      <div className="we__partner__container__content__card__img__wrapper">
+        <img
+          src={partnerAward}
+          alt="partnerAward"
+          className="we__partner__container__content__card__img"
+        />
+        <div className="we__partner__container__content__card__img__overlay">
+          2018 Certified Agency
+        </div>
+      </div>
+      <div className="we__partner__container__content__card__title">
+        One of 50 Google-certified agencies
+      </div>
+    </div>
+  );
+}
 
 function DriveExcelCard() {
   return (
@@ -161,6 +187,7 @@ function DriveExcelCard() {
 }
 
 export default function AboutUs() {
+  const [select, setSelect] = useState("All");
   return (
     <>
       <div className="aigron__project__main__container">
@@ -237,8 +264,8 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <TestimonialSection />
-      {/* <div className="work__across__container">
+
+      <div className="work__across__container">
         <div className="work__across__container__left">
           <div className="work__across__container__left__img__wrapper">
             <img
@@ -247,21 +274,108 @@ export default function AboutUs() {
               className="work__across__container__left__img"
             />
           </div>
-          <div className="work__across__container__left__img__wrapper__overlay">
+          <div className="we__partner__container__left__img__wrapper__overlay">
             <div className="work__across__container__left__img__wrapper__overlay__heading">
-              We Work Across <br /> Many Industries – <span> Find Yours!</span>
+              <span> We partner</span> up with the <br />
+              <span> Industry Leaders</span>
+            </div>
+            <div className="we__partner__container__left__img__wrapper__overlay__para">
+              We transform bold business ideas into exceptional digital
+              products. Searching for a partner that will take the process of
+              software development off your hands? You’ve come to the right
+              place. We ideate, design, and develop data-driven digital products
+              made to answer business challenges. We offer 360° services to
+              smoothly guide you on your way to creating a seamless digital
+              masterpiece.
             </div>
           </div>
         </div>
-        <div className="work__across__container__content">
-          <WeAcrossCard title="E-Commerce Apps" svg={cartSvg} />
-          <WeAcrossCard title="LifeStyle" svg={lifeSvg} />
-          <WeAcrossCard title="AR Apps" svg={arSvg} />
-          <WeAcrossCard title="Utility Apps" svg={utilSvg} />
-          <WeAcrossCard title="Enterprise Apps" svg={enterSvg} />
-          <WeAcrossCard title="Social Networking" svg={markSvg} />
+        <div className="we__partner__container__content">
+          <IndustryPartnerCard />
+          <IndustryPartnerCard />
+          <IndustryPartnerCard />
         </div>
-      </div> */}
+      </div>
+      <TestimonialSection />
+      <div className="projects__container">
+        <div className="projects__container__content">
+          <div className="projects__container__sub__heading">Projects</div>
+          <div className="projects__container__heading">
+            We are changing the world <br /> – the tech way
+          </div>
+          <div className="projects__container__content__btn__wrapper">
+            <ProjectNav title="All" select={select} setSelect={setSelect} />
+            <ProjectNav title="UI/UX" select={select} setSelect={setSelect} />
+            <ProjectNav title="Web" select={select} setSelect={setSelect} />
+            <ProjectNav title="Mobile" select={select} setSelect={setSelect} />
+            <ProjectNav
+              title="Graphic "
+              select={select}
+              setSelect={setSelect}
+            />
+          </div>
+          <div className="projects__container__content__projects__wrapper">
+            <div className="projects__container__content__projects__wrapper__card">
+              <div className="projects__container__content__projects__wrapper__card__header">
+                <div className="projects__container__content__projects__wrapper__card__heading">
+                  Project
+                  <span>Name here</span>
+                </div>
+                <img
+                  src={projectSvg}
+                  alt="projectSvg"
+                  className="projects__container__content__projects__wrapper__card__svg"
+                />
+              </div>
+              <div className="projects__container__content__projects__wrapper__card__para">
+                We’re changing the way you travel in Pakistan. While short-term
+                rentals are on a rise in the country, they are often. Our
+                properties come with on-site concierge and consistent amenities
+                – allowing you to en.
+              </div>
+            </div>
+            <div className="projects__container__content__projects__wrapper__img__card">
+              <img
+                src={projectPic1}
+                alt="projectPic"
+                className="projects__container__content__projects__wrapper__img"
+              />
+            </div>
+            <div className="projects__container__content__projects__wrapper__img__card">
+              <img
+                src={projectPic2}
+                alt="projectPic"
+                className="projects__container__content__projects__wrapper__img"
+              />
+            </div>
+          </div>
+          <div
+            style={{ marginBottom: 30 }}
+            className="trending__job__container__view__all__footer"
+          >
+            <button className="trending__job__container__view__all">
+              <div className="trending__job__container__view__all__heading">
+                View All
+              </div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20.243"
+                height="13.501"
+                viewBox="0 0 20.243 13.501"
+              >
+                <path
+                  id="Icon_ionic-ios-arrow-round-forward"
+                  data-name="Icon ionic-ios-arrow-round-forward"
+                  d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z"
+                  transform="translate(-7.875 -11.252)"
+                  fill="#04133b"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

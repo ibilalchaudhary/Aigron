@@ -313,11 +313,31 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
-  font-weight: 500;
+
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.trending__job__container__view__all__heading:hover {
+  animation: viewBtnAnimation 400ms forwards;
+}
+.trending__job__container__view__all__heading {
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+@keyframes viewBtnAnimation {
+  from {
+    margin: 0px;
+  }
+  to {
+    margin: 0px 20px;
+  }
 }
 .trending__job__container__view__all__footer {
   width: 100%;
@@ -327,18 +347,19 @@ body {
   margin-top: 3em;
 }
 .trending__job__container__view__all svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin-left: 0.8em;
 }
 .trending__job__container__view__all::after {
   position: absolute;
-  bottom: -4px;
+  bottom: -6px;
   left: 0;
   content: "";
   width: 100%;
   height: 3px;
   background: #6ba53a;
+  border-radius: 20px;
 }
 .data__analytics__container {
   width: 100%;
@@ -989,9 +1010,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+.we__partner__container__left__img__wrapper__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(36, 36, 36, 0.8);
+  padding: 2em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .work__across__container__left__img__wrapper__overlay__heading {
   font-size: 24px;
   color: #fff;
+}
+.we__partner__container__left__img__wrapper__overlay__para {
+  font-size: 15px;
+  color: #fff;
+  margin-top: 0.5em;
 }
 .work__across__container__left__img__wrapper__overlay__heading span {
   font-weight: 600;
@@ -1004,6 +1042,7 @@ body {
   flex-wrap: wrap;
   padding: 0em 4em;
 }
+
 .work__across__container__content__card {
   width: 30%;
   height: fit-content;
@@ -1408,6 +1447,165 @@ body {
   font-size: 14px;
   color: #fff;
 }
+.we__partner__container__content__card {
+  width: 48%;
+  height: fit-content;
+  min-height: 300px;
+  background: #f9f9f9;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+}
+.we__partner__container__content__card:nth-child(1) {
+  margin-bottom: 1em;
+}
+.we__partner__container__content__card:nth-child(3) {
+  margin-top: 10em;
+}
+.we__partner__container__content__card__img {
+  width: 260px;
+}
+.we__partner__container__content__card__img__wrapper {
+  position: relative;
+}
+.we__partner__container__content__card__img__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.5em 1em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+.we__partner__container__content__card__title {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1em;
+  width: 230px;
+}
+.we__partner__container__content {
+  width: 50%;
+  height: 100%;
+  max-height: 700px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+.projects__container {
+  width: 100%;
+  height: fit-content;
+  min-height: 60vh;
+  background: url("./assets/projectsBg.jpg") no-repeat;
+  background-size: cover;
+}
+.projects__container__content {
+  width: 100%;
+  height: fit-content;
+  max-width: 1440px;
+  padding: 2em;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.projects__container__sub__heading {
+  font-size: 18px;
+  color: #6ba53a;
+  font-weight: 500;
+}
+.projects__container__heading {
+  font-size: 26px;
+  color: #000000;
+  font-weight: 600;
+}
+.projects__container__content__btn__wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: end;
+  margin: 2em 0em;
+}
+.projects__container__content__btn {
+  padding: 0.4em 1em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 300ms ease-in-out;
+  color: #000000;
+  border-radius: 4px;
+}
+.projects__container__content__btn:hover {
+  background: #6ba53a;
+  transition: 300ms ease-in-out;
+  color: #fff;
+}
+.projects__container__content__btn__selected {
+  background: #6ba53a;
+  transition: 300ms ease-in-out;
+  color: #fff;
+}
+.projects__container__content__projects__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4em 0em;
+}
+.projects__container__content__projects__wrapper__img__card {
+  width: 32%;
+  height: 300px;
+  margin-left: 2em;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects__container__content__projects__wrapper__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 400ms ease-in-out;
+}
+.projects__container__content__projects__wrapper__img:hover {
+  transform: scale(1.06);
+  transition: 400ms ease-in-out;
+}
+.projects__container__content__projects__wrapper__card {
+  width: 33%;
+  background-color: #04133b;
+  color: #fff;
+  padding: 2em;
+  margin-right: -5em;
+  position: relative;
+  z-index: 99;
+  border-radius: 12px;
+}
+.projects__container__content__projects__wrapper__card__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0em;
+}
+.projects__container__content__projects__wrapper__card__heading {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.projects__container__content__projects__wrapper__card__heading span {
+  font-weight: 600;
+}
+.projects__container__content__projects__wrapper__card__para {
+  font-size: 15px;
+  color: #ff;
+}
 @media (max-width: 1440px) {
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
@@ -1455,6 +1653,13 @@ body {
   .business__meet__container__content {
     width: 100%;
     margin-top: 2em;
+  }
+  .we__partner__container__content {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .we__partner__container__content__card {
+    width: 48%;
   }
 }
 @media (max-width: 1050px) {
@@ -1598,6 +1803,14 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .we__partner__container__content__card {
+    width: 100%;
+    margin: 0px !important;
+    margin-bottom: 1em !important;
+  }
+  .we__partner__container__content {
+    max-height: fit-content;
+  }
   .drive__us__to__excel__container__content__right__content__card {
     width: 100%;
   }
