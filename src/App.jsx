@@ -9,6 +9,8 @@ import AigronProjects from "./screens/AigronProjects";
 import AboutUs from "./screens/AboutUs";
 import Blog from "./screens/Blog";
 import BlogDetails from "./screens/BlogDetails";
+import Portfolio from "./screens/Portfolio";
+import PortfolioDetails from "./screens/PortfolioDetails";
 
 function App() {
   const [isWellcome, setIsWellcome] = useState(false);
@@ -27,6 +29,8 @@ function App() {
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog_details" element={<BlogDetails />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio-details" element={<PortfolioDetails />} />
         </Routes>
       </div>
       {isWellcome ? null : <Footer />}

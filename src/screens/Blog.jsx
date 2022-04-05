@@ -5,7 +5,16 @@ import blogPic from "../assets/blogPic.jpg";
 
 function BlogCard() {
   return (
-    <Link to="/blog_details" className="blog__container__wrapper__card">
+    <Link
+      to="/blog_details"
+      onClick={() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }}
+      className="blog__container__wrapper__card"
+    >
       <img
         src={blogPic}
         alt="blogPic"

@@ -7,6 +7,7 @@ import TestimonialSection from "../components/TestimonialSection";
 import partnerAward from "../assets/partnerAward.png";
 import ProjectNav from "../components/ProjectNav";
 import ProjectCard from "../components/ProjectCard";
+import { Link } from "react-router-dom";
 
 function IndustryPartnerCard() {
   return (
@@ -317,7 +318,16 @@ export default function AboutUs() {
             style={{ marginBottom: 30 }}
             className="trending__job__container__view__all__footer"
           >
-            <button className="trending__job__container__view__all">
+            <Link
+              to="/portfolio"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              className="trending__job__container__view__all"
+            >
               <div className="trending__job__container__view__all__heading">
                 Load More
               </div>
@@ -336,7 +346,7 @@ export default function AboutUs() {
                   fill="#04133b"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
