@@ -1829,12 +1829,67 @@ body {
   transform: scale(1.1);
   transition: 400ms ease-in-out;
 }
+.portfolio__details__container {
+  width: 100%;
+  max-width: 1440px;
+  height: fit-content;
+  min-height: 60vh;
+  padding: 8em 2em;
+  margin: 0px auto;
+}
+.portfolio__details__container__heading {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 800;
+  margin-bottom: 0.6em;
+}
+.portfolio__details__container__tools__heading {
+  font-size: 18px;
+  color: #6ba53a;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+  width: 100%;
+  text-align: center;
+  margin-top: 4em;
+}
+.portfolio__details__container__para {
+  font-size: 15px;
+  color: #000000;
+}
+.portfolio__details__container__tools__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2em;
+}
+.portfolio__details__container__tools__card {
+  width: 16%;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio__details__container__tools__card:hover {
+  background: rgb(107, 165, 58, 0.1);
+  transition: 300ms ease-in-out;
+}
+.portfolio__details__container__tools__card__img {
+  width: 130px;
+}
 @media (max-width: 1440px) {
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
   }
 }
 @media (max-width: 1150px) {
+  .portfolio__details__container__tools__card {
+    width: 23%;
+  }
   .drive__us__to__excel__container__content {
     flex-direction: column;
   }
@@ -1995,6 +2050,9 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .portfolio__details__container__tools__card {
+    width: 33%;
+  }
   .portfolio__container__card {
     width: 45%;
   }
@@ -2064,6 +2122,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .portfolio__details__container__tools__card {
+    width: 50%;
+  }
   .portfolio__container__btn__wrapper {
     flex-direction: column;
   }
