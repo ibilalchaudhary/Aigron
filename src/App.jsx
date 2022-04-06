@@ -11,6 +11,7 @@ import Blog from "./screens/Blog";
 import BlogDetails from "./screens/BlogDetails";
 import Portfolio from "./screens/Portfolio";
 import PortfolioDetails from "./screens/PortfolioDetails";
+import Expertise from "./screens/Expertise";
 
 function App() {
   const [isWellcome, setIsWellcome] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           <Route path="/blog_details" element={<BlogDetails />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio-details" element={<PortfolioDetails />} />
+          <Route path="/expertise" element={<Expertise />} />
         </Routes>
       </div>
       {isWellcome ? null : <Footer />}

@@ -1881,12 +1881,195 @@ body {
 .portfolio__details__container__tools__card__img {
   width: 130px;
 }
+.expertise__container {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+.expertise__container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.expertise__container__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expertise__container__overlay__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+}
+.expertise__container__overlay__content__heading {
+  padding: 0.8em 1.5em;
+  background: rgb(107, 165, 58, 0.8);
+  width: fit-content;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+}
+.expertise__container__overlay__content__para {
+  padding: 1.5em;
+  border-radius: 12px;
+  background: rgb(255, 255, 255, 0.7);
+  margin-top: 0.5em;
+  font-size: 15px;
+}
+.expertise__content__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0em 1em;
+  height: fit-content;
+  margin: 0px auto;
+  margin-bottom: 3em;
+}
+.get__quote__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.get__quote__container__left {
+  width: 45%;
+  height: 500px;
+  position: relative;
+}
+.get__quote__container__left__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.get__quote__container__right {
+  width: 55%;
+  height: 550px;
+  position: relative;
+}
+.get__quote__container__right__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.get__quote__container__left__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 2em 4em;
+}
+.get__quote__container__right__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(107, 165, 58, 0.8);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 2em;
+}
+.contact__inputs {
+  width: 100%;
+  padding: 0.9em 1em;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  margin-top: 0.7em;
+  font-size: 15px;
+  transition: 300ms all ease-in-out;
+  resize: none;
+}
+.contact__inputs:-webkit-autofill,
+.contact__inputs:-webkit-autofill:hover,
+.contact__inputs:-webkit-autofill:focus,
+.contact__inputs:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff;
+}
+.contact__inputs:focus,
+.contact__inputs:hover {
+  background: rgb(255, 255, 255, 0.5);
+  transition: 300ms ease-in-out;
+}
+.contact__inputs::placeholder {
+  color: rgb(255, 255, 255);
+}
+.get__quote__container__right__overlay__left {
+  width: 50%;
+}
+.get__quote__container__right__overlay__left__heading {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  text-align: start;
+}
+.contact__btn {
+  padding: 0.8em 2em;
+  background: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 0.3em;
+  font-weight: 500;
+  transition: 300ms ease-in-out;
+}
+.contact__btn:hover {
+  background: transparent;
+  transition: 300ms ease-in-out;
+  color: #fff;
+}
+.contact__btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 @media (max-width: 1440px) {
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
   }
 }
 @media (max-width: 1150px) {
+  .get__quote__container {
+    flex-direction: column;
+  }
+  .get__quote__container__left {
+    width: 100%;
+  }
+  .get__quote__container__right__overlay {
+    width: 100%;
+  }
+  .get__quote__container__right__overlay__left {
+    width: 100%;
+  }
+  .get__quote__container__right {
+    width: 100%;
+  }
   .portfolio__details__container__tools__card {
     width: 23%;
   }
@@ -2187,6 +2370,9 @@ body {
     display: none;
   }
   .blog__further__details__wrapper {
+    padding: 2em;
+  }
+  .get__quote__container__left__overlay {
     padding: 2em;
   }
 }
