@@ -569,6 +569,19 @@ body {
   transition: 300ms ease-in-out;
   color: rgb(0, 0, 0);
 }
+.upload__cv__container__right__overlay__btn {
+  padding: 0.8em 2em;
+  background: #6ba53a;
+  border: 1px solid #6ba53a;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.upload__cv__container__right__overlay__btn:hover {
+  background: transparent;
+  transition: 300ms ease-in-out;
+}
 .footer__main__container {
   width: 100%;
   height: fit-content;
@@ -1933,6 +1946,12 @@ body {
   margin: 0px auto;
   margin-bottom: 3em;
 }
+.contact__container__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: -4em;
+}
 .get__quote__container {
   display: flex;
   align-items: flex-end;
@@ -1948,12 +1967,36 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.contact__container__content__left {
+  width: 40%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__container__content__map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
 .get__quote__container__right {
-  width: 55%;
+  width: 50%;
   height: 550px;
   position: relative;
 }
 .get__quote__container__right__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact__container__content__right {
+  width: 60%;
+  height: 550px;
+  position: relative;
+}
+.contact__container__content__right__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1989,6 +2032,26 @@ body {
   font-weight: 600;
   padding: 2em;
 }
+.contact__container__content__right__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 2em;
+}
+.contact__container__content__right__overlay__right {
+  width: 45%;
+  padding: 2em;
+  color: #6ba53a;
+}
 .contact__inputs {
   width: 100%;
   padding: 0.9em 1em;
@@ -2020,6 +2083,9 @@ body {
 .get__quote__container__right__overlay__left {
   width: 50%;
 }
+.contact__container__content__right__overlay__left {
+  width: 50%;
+}
 .get__quote__container__right__overlay__left__heading {
   font-size: 18px;
   color: #fff;
@@ -2049,12 +2115,311 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+.how__we__work__container {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+.how__we__work__container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.how__we__work__container__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+}
+.how__we__work__container__overlay span {
+  font-size: 18px;
+  color: #6ba53a;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.how__we__work__cards__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  margin-top: -10em;
+  position: relative;
+  z-index: 999;
+}
+.how__we__work__card {
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.how__we__work__card__circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  border: 2px dotted #6ba53a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  color: #6ba53a;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+.how__we__work__card__sub__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 150px;
+  padding: 1em;
+  background: #fff;
+  border: 4px solid #6ba53a;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 10px 30px rgb(0, 0, 0, 0.1);
+}
+.how__we__work__card__sub__card__ploygon {
+  background: #fff;
+  height: 70px;
+  width: 70px;
+  transform: rotate(45deg);
+  margin-top: -8em;
+  border-radius: 8px;
+}
+.how__we__work__card__sub__card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.how__we__work__card__sub__card svg {
+  width: 90px;
+}
+.how__we__work__card__title {
+  font-size: 15px;
+  margin-top: 1em;
+  width: 75%;
+  text-align: center;
+  font-weight: 500;
+}
+.upload__cv__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload__cv__container__left {
+  width: 50%;
+  height: 300px;
+  position: relative;
+}
+.upload__cv__container__left__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(107, 165, 58, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload__cv__container__left__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upload__cv__container__right__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upload__cv__container__right {
+  width: 50%;
+  height: 200px;
+  position: relative;
+}
+.upload__cv__container__right__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+.upload__cv__container__right__overlay span {
+  font-weight: 600;
+}
+.upload__cv__container__left__overlay__input__wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 1em;
+  border: 1px solid #6ba53a;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.upload__cv__container__left__overlay__input__wrapper:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  transition: 300ms ease-in-out;
+}
+.upload__cv__container__left__overlay__input__wrapper:hover * {
+  stroke: #fff !important;
+}
+.upload__cv__container__left__overlay__heading {
+  font-size: 30px;
+  color: #fff;
+}
+.upload__cv__container__left__overlay__heading span {
+  font-weight: 700;
+}
+.upload__cv__container__left__overlay__input__wrapper svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+}
+.upload__cv__container__left__overlay__input {
+  opacity: 0;
+}
+.job__requirment__container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.job__requirment__container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.job__requirment__container__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job__requirment__container__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  margin: 0px auto;
+}
+.job__requirment__container__content__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.job__requirment__container__content__left__heading {
+  font-size: 26px;
+  color: #000000;
+  font-weight: 600;
+  width: 80%;
+}
+.job__requirment__container__content__left__btn {
+  display: flex;
+  align-items: center;
+  padding: 0.8em 1.5em;
+  background: rgb(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin-right: 1em;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+.job__requirment__container__content__left__btn svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.6em;
+}
+.job__requirment__container__content__left__btn__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+}
+.job__requirment__container__content__left__para {
+  margin-top: 0.5em;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+}
+.job__requirment__container__content__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  padding: 3em;
+  background: rgb(107, 165, 58, 0.75);
+  border-radius: 40px 0px 0px 0px;
+}
+.job__requirment__container__content__right__heading {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+.job__requirment__container__content__right__para {
+  font-size: 15px;
+  color: #fff;
+}
 @media (max-width: 1440px) {
+  .contact__container__content__right__overlay__right {
+    padding: 1em;
+  }
   .footer__main__container__entry__wrapper__heading {
     font-size: 16px;
   }
 }
 @media (max-width: 1150px) {
+  .contact__container__content {
+    flex-direction: column;
+  }
+  .contact__container__content__left {
+    width: 100%;
+  }
+  .contact__container__content__right {
+    width: 100%;
+  }
   .get__quote__container {
     flex-direction: column;
   }
@@ -2127,6 +2492,34 @@ body {
   }
 }
 @media (max-width: 1050px) {
+  .upload__cv__container {
+    flex-direction: column;
+  }
+  .upload__cv__container__left {
+    width: 100%;
+  }
+  .upload__cv__container__right {
+    width: 100%;
+  }
+  .how__we__work__cards__wrapper {
+    width: 100% !important;
+    overflow: scroll;
+  }
+  .how__we__work__cards__wrapper::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+  }
+  .how__we__work__cards__wrapper::-webkit-scrollbar-thumb {
+    background: #6ba53a;
+    border-radius: 6px;
+  }
+  .how__we__work__cards__wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .how__we__work__card {
+    min-width: 200px !important;
+  }
   .portfolio__container__card {
     width: 29%;
   }
@@ -2233,6 +2626,18 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .contact__container__content__right__overlay__right {
+    display: none;
+  }
+  .contact__container__content__right__overlay {
+    padding: 1em;
+  }
+  .get__quote__container__right__overlay {
+    padding: 1em;
+  }
+  .contact__container__content__right__overlay__left {
+    width: 100%;
+  }
   .portfolio__details__container__tools__card {
     width: 33%;
   }
@@ -2305,6 +2710,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .expertise__container {
+    height: 1000px;
+  }
   .portfolio__details__container__tools__card {
     width: 50%;
   }

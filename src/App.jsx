@@ -12,6 +12,9 @@ import BlogDetails from "./screens/BlogDetails";
 import Portfolio from "./screens/Portfolio";
 import PortfolioDetails from "./screens/PortfolioDetails";
 import Expertise from "./screens/Expertise";
+import Contact from "./screens/Contact";
+import HowWeWork from "./screens/HowWeWork";
+import JobRequirement from "./screens/JobRequirement";
 
 function App() {
   const [isWellcome, setIsWellcome] = useState(false);
@@ -33,6 +36,9 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio-details" element={<PortfolioDetails />} />
           <Route path="/expertise" element={<Expertise />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/how_we_work" element={<HowWeWork />} />
+          <Route path="/job-requirement" element={<JobRequirement />} />
         </Routes>
       </div>
       {isWellcome ? null : <Footer />}
