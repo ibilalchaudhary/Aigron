@@ -3200,6 +3200,38 @@ body {
   cursor: pointer;
   margin-top: 1.5em;
 }
+.search__job__section {
+  width: 100%;
+  height: fit-content;
+  min-height: 40vh;
+  display: flex;
+  background: url("./assets/searchJobBg.jpg") no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.search__job__section__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search__job__section__content__heading {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.search__job__section__content__para {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+}
 @media (max-width: 1440px) {
   .contact__container__content__right__overlay__right {
     padding: 1em;
@@ -3764,5 +3796,8 @@ body {
   }
   .testimonial__container__content__para {
     padding: 2em;
+  }
+  .search__job__section__content__para {
+    width: 100%;
   }
 }
