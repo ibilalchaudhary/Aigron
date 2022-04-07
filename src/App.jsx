@@ -15,6 +15,7 @@ import Expertise from "./screens/Expertise";
 import Contact from "./screens/Contact";
 import HowWeWork from "./screens/HowWeWork";
 import JobRequirement from "./screens/JobRequirement";
+import MoreAboutJob from "./screens/MoreAboutJob";
 
 function App() {
   const [isWellcome, setIsWellcome] = useState(false);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/how_we_work" element={<HowWeWork />} />
           <Route path="/job-requirement" element={<JobRequirement />} />
+          <Route path="/more_about_job" element={<MoreAboutJob />} />
         </Routes>
       </div>
       {isWellcome ? null : <Footer />}
