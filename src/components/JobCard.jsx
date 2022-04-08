@@ -1,8 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function JobCard() {
   return (
-    <div className="job__card">
+    <Link
+      to="/job-requirement"
+      onClick={() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }}
+      className="job__card"
+    >
       <div className="job__card__heading">Job Name Display Here</div>
       <div className="job__card__content">
         <div className="job__card__content__para">
@@ -59,6 +69,6 @@ export default function JobCard() {
       </div>
       <button className="job__card__btn">Apply Directy</button>
       <button className="job__card__badge">More Info</button>
-    </div>
+    </Link>
   );
 }

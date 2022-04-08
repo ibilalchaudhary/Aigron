@@ -40,7 +40,10 @@ export default function AigronRecruitment() {
               placeholder="It is upto you to choose from 234344 Jobs"
               className="aigron__recuitment__main__container__content__input"
             />
-            <button className="aigron__recuitment__main__container__content__input__btn">
+            <Link
+              to="/search_job"
+              className="aigron__recuitment__main__container__content__input__btn"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30.621"
@@ -74,7 +77,7 @@ export default function AigronRecruitment() {
                   />
                 </g>
               </svg>
-            </button>
+            </Link>
           </div>
           {/* {isSearch ? (
             <div className="aigron__recuitment__main__container__content__input__model">
@@ -232,9 +235,12 @@ export default function AigronRecruitment() {
               <div className="employee__candidate__container__content__card__para">
                 Are you looking for new professionals?
               </div>
-              <button className="employee__candidate__container__content__card__btn">
+              <Link
+                to="/more_about_job"
+                className="employee__candidate__container__content__card__btn"
+              >
                 View More
-              </button>
+              </Link>
             </div>
           </div>
           <div className="employee__candidate__container__content">
@@ -245,9 +251,12 @@ export default function AigronRecruitment() {
               <div className="employee__candidate__container__content__card__para employee__candidate__container__content__card___heading__candidate">
                 Are you looking for a new job?
               </div>
-              <button className="employee__candidate__container__content__card__btn__candidate">
+              <Link
+                to="/more_about_job"
+                className="employee__candidate__container__content__card__btn__candidate"
+              >
                 View More
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -266,9 +275,18 @@ export default function AigronRecruitment() {
             <div className="data__science__container__overlay__content__para">
               Hire expert data scientist, engineers, and analysts.
             </div>
-            <button className="data__science__container__overlay__content__btn">
+            <Link
+              to="/how_we_work"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+              className="data__science__container__overlay__content__btn"
+            >
               View More
-            </button>
+            </Link>
           </div>
         </div>
       </div>

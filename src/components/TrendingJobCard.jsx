@@ -1,8 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function TrendingJobCard({ img, title, span, imgHover }) {
   return (
-    <div className="trending__job__container__content__card">
+    <Link
+      to="/search_job"
+      onClick={() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }}
+      className="trending__job__container__content__card"
+    >
       <img
         src={img}
         alt="trendingJobPic"
@@ -16,6 +26,6 @@ export default function TrendingJobCard({ img, title, span, imgHover }) {
       <div className="trending__job__container__content__card__title">
         {title} <span>{span}</span>
       </div>
-    </div>
+    </Link>
   );
 }
