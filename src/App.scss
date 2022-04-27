@@ -172,7 +172,7 @@ body {
 .aigron__recuitment__main__container__content__input__wrapper {
   width: 50%;
   background: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -183,12 +183,12 @@ body {
   margin-bottom: 8em;
 }
 .aigron__recuitment__main__container__content__input__wrapper:focus-within {
-  border: 1px solid #6ba53a;
+  border: 2px solid #6ba53a;
   transition: 300ms ease-in-out;
 }
 .aigron__recuitment__main__container__content__input__wrapper:hover {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-  border: 1px solid #6ba53a;
+  border: 2px solid #6ba53a;
   transition: 300ms ease-in-out;
 }
 .aigron__recuitment__main__container__content__input__model {
