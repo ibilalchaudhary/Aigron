@@ -12,9 +12,12 @@ import { Link } from "react-router-dom";
 import dataAnalysicsBg from "../assets/dataAnalysicsBg.jpg";
 import globalLeaderPic from "../assets/globalLeaderPic.jpg";
 import dataScienceBg from "../assets/dataScienceBg.jpg";
+import vacancyPic from "../assets/vacancyPic.jpg";
+import workAcress from "../assets/workAcress.png";
 
 export default function AigronRecruitment() {
   const [isSearch, setIsSearch] = useState(false);
+  const [isSelect, setIsSelect] = useState(false);
   const recentSearches = [
     {
       title: "Full-Service Software Development Company",
@@ -225,42 +228,129 @@ export default function AigronRecruitment() {
           className="global__leader__container__img"
         />
       </div>
-      <div className="employee__candidate__container">
-        <div className="employee__candidate__container__content__wrapper">
-          <div className="employee__candidate__container__content">
-            <div className="employee__candidate__container__content__card">
-              <div className="employee__candidate__container__content__card__heading">
-                Employee
+
+      {isSelect ? (
+        <div className="upload__cv__container">
+          <div className="upload__cv__container__left">
+            <img
+              src={workAcress}
+              alt="uploadCvPic"
+              className="upload__cv__container__left__img"
+            />
+            <div className="upload__cv__container__left__overlay">
+              <div className="upload__cv__container__left__overlay__input__wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="47.427"
+                  height="47.427"
+                  viewBox="0 0 47.427 47.427"
+                >
+                  <g
+                    id="Icon_feather-plus"
+                    data-name="Icon feather-plus"
+                    transform="translate(-5 -5)"
+                  >
+                    <path
+                      id="Path_10280"
+                      data-name="Path 10280"
+                      d="M18,7.5V49.927"
+                      transform="translate(10.714 0)"
+                      fill="none"
+                      stroke="#6ea83d"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="5"
+                    />
+                    <path
+                      id="Path_10281"
+                      data-name="Path 10281"
+                      d="M7.5,18H49.927"
+                      transform="translate(0 10.714)"
+                      fill="none"
+                      stroke="#6ea83d"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="5"
+                    />
+                  </g>
+                </svg>
+
+                <input
+                  type="file"
+                  className="upload__cv__container__left__overlay__input"
+                />
               </div>
-              <div className="employee__candidate__container__content__card__para">
-                Are you looking for new professionals?
+              <div className="upload__cv__container__left__overlay__heading">
+                Upload <span>CV </span>
               </div>
-              <Link
-                to="/more_about_job"
-                className="employee__candidate__container__content__card__btn"
-              >
-                View More
-              </Link>
             </div>
           </div>
-          <div className="employee__candidate__container__content">
-            <div className="employee__candidate__container__content__card employee__candidate__container__content__card__candidate">
-              <div className="employee__candidate__container__content__card__heading employee__candidate__container__content__card___heading__candidate">
-                Candidate
-              </div>
-              <div className="employee__candidate__container__content__card__para employee__candidate__container__content__card___heading__candidate">
-                Are you looking for a new job?
-              </div>
+          <div className="upload__cv__container__right">
+            <img
+              src={vacancyPic}
+              alt="vacancyPic"
+              className="upload__cv__container__right__img"
+            />
+            <div className="upload__cv__container__right__overlay">
+              A redirection to the vacancies site
               <Link
                 to="/more_about_job"
-                className="employee__candidate__container__content__card__btn__candidate"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
+                className="upload__cv__container__right__overlay__btn"
               >
                 View More
               </Link>
             </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div className="employee__candidate__container">
+          <div className="employee__candidate__container__content__wrapper">
+            <div className="employee__candidate__container__content">
+              <div className="employee__candidate__container__content__card">
+                <div className="employee__candidate__container__content__card__heading">
+                  Employee
+                </div>
+                <div className="employee__candidate__container__content__card__para">
+                  Are you looking for new professionals?
+                </div>
+                <button
+                  onClick={() => {
+                    setIsSelect(true);
+                  }}
+                  className="employee__candidate__container__content__card__btn"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+            <div className="employee__candidate__container__content">
+              <div className="employee__candidate__container__content__card employee__candidate__container__content__card__candidate">
+                <div className="employee__candidate__container__content__card__heading employee__candidate__container__content__card___heading__candidate">
+                  Candidate
+                </div>
+                <div className="employee__candidate__container__content__card__para employee__candidate__container__content__card___heading__candidate">
+                  Are you looking for a new job?
+                </div>
+                <button
+                  onClick={() => {
+                    setIsSelect(true);
+                  }}
+                  className="employee__candidate__container__content__card__btn__candidate"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="data__science__container">
         <img
           src={dataScienceBg}
@@ -275,7 +365,12 @@ export default function AigronRecruitment() {
             <div className="data__science__container__overlay__content__para">
               Hire expert data scientist, engineers, and analysts.
             </div>
-            <Link
+            <div className="data__science__container__overlay__content__para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+              dolorum voluptatum delectus, officia laborum commodi
+            </div>
+
+            {/* <Link
               to="/how_we_work"
               onClick={() => {
                 window.scrollTo({
@@ -286,7 +381,7 @@ export default function AigronRecruitment() {
               className="data__science__container__overlay__content__btn"
             >
               View More
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

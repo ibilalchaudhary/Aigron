@@ -343,7 +343,12 @@ export default function JobRequirement() {
                   <button className="apply__now__container__content__from__cv__btn">
                     Upload Your CV
                   </button>
-                  <button className="apply__now__container__content__from__btn">
+                  <button
+                    onClick={() => {
+                      setSelect("Your ambitions");
+                    }}
+                    className="apply__now__container__content__from__btn"
+                  >
                     Submit
                   </button>
                 </>
@@ -370,7 +375,12 @@ export default function JobRequirement() {
                     placeholder="Phone"
                     className="apply__now__container__content__from__input"
                   />
-                  <button className="apply__now__container__content__from__btn">
+                  <button
+                    onClick={() => {
+                      setSelect("Your selection of conversations");
+                    }}
+                    className="apply__now__container__content__from__btn"
+                  >
                     Submit
                   </button>
                 </>
@@ -399,7 +409,12 @@ export default function JobRequirement() {
                     placeholder="Message"
                     className="apply__now__container__content__from__input"
                   />
-                  <button className="apply__now__container__content__from__btn">
+                  <button
+                    onClick={() => {
+                      setSelect("Your job choice");
+                    }}
+                    className="apply__now__container__content__from__btn"
+                  >
                     Submit
                   </button>
                 </>

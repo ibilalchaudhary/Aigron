@@ -99,7 +99,7 @@ export default function HowWeWork() {
         <HowWorkCard count="05" />
       </div>
       <TestimonialSection />
-      <div className="upload__cv__container">
+      {/* <div className="upload__cv__container">
         <div className="upload__cv__container__left">
           <img
             src={workAcress}
@@ -167,7 +167,7 @@ export default function HowWeWork() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
