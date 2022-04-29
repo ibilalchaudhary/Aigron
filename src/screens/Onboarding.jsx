@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import recruitmentPic from "../assets/recruitmentPic.jpg";
 import projectPic from "../assets/projectPic.jpg";
-import onboardingLogo from "../assets/onboardingLogo.jpg";
+import onboardingLogo from "../assets/onboardingLogo.svg";
 import { Link } from "react-router-dom";
 
 export default function Onboarding({ setIsWellcome }) {
