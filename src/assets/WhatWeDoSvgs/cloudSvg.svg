@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100.028" height="64.297" viewBox="0 0 100.028 64.297">
-  <g id="Group_41" data-name="Group 41" transform="translate(2 2)">
-    <g id="Group_40" data-name="Group 40" transform="translate(0 0)">
-      <g id="Group_39" data-name="Group 39">
-        <g id="Group_38" data-name="Group 38">
-          <g id="Group_37" data-name="Group 37">
-            <g id="Group_36" data-name="Group 36">
-              <g id="Group_35" data-name="Group 35">
-                <path id="Path_21" data-name="Path 21" d="M42.3,0C29.063,0,18.29,10.518,18.29,23.449c0,.384.054.741.071,1.117H18.29A18.118,18.118,0,0,0,0,42.431,18.118,18.118,0,0,0,18.29,60.3H73.164c12.6,0,22.864-10.023,22.864-22.332S85.766,15.632,73.164,15.632a22.972,22.972,0,0,0-8.073,1.606A23.664,23.664,0,0,0,42.3,0Z" fill="none" stroke="#6ba439" stroke-width="4" fill-rule="evenodd"/>
-                <path id="Path_22" data-name="Path 22" d="M37.933,13a8.936,8.936,0,1,1-6.316,2.617A8.9,8.9,0,0,1,37.933,13Z" transform="translate(35.763 16.032)" fill="none" stroke="#1a6465" stroke-width="4" fill-rule="evenodd"/>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100.028" height="64.297" viewBox="0 0 100.028 64.297"><g id="Group_41" data-name="Group 41" transform="translate(2 2)"><g id="Group_40" data-name="Group 40" transform="translate(0 0)"><g id="Group_39" data-name="Group 39"><g id="Group_38" data-name="Group 38"><g id="Group_37" data-name="Group 37"><g id="Group_36" data-name="Group 36"><g id="Group_35" data-name="Group 35"><path id="Path_21" fill="none" fill-rule="evenodd" stroke="#6ba439" stroke-width="4" d="M42.3,0C29.063,0,18.29,10.518,18.29,23.449c0,.384.054.741.071,1.117H18.29A18.118,18.118,0,0,0,0,42.431,18.118,18.118,0,0,0,18.29,60.3H73.164c12.6,0,22.864-10.023,22.864-22.332S85.766,15.632,73.164,15.632a22.972,22.972,0,0,0-8.073,1.606A23.664,23.664,0,0,0,42.3,0Z" data-name="Path 21"/><path id="Path_22" fill="none" fill-rule="evenodd" stroke="#1a6465" stroke-width="4" d="M37.933,13a8.936,8.936,0,1,1-6.316,2.617A8.9,8.9,0,0,1,37.933,13Z" data-name="Path 22" transform="translate(35.763 16.032)"/></g></g></g></g></g></g></g></svg>
